@@ -12,6 +12,7 @@ const BookingForm = ({ availableTimes, onDateChange, submitForm }) => {
 
   const [errors, setErrors] = useState({});
 
+  //client side validation
   const validate = () => {
     let tempErrors = {};
     if (!formData.date) tempErrors.date = "Date is required";
